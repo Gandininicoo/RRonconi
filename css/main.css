@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Prompt', sans-serif;
+}
+.header{
+    height: 90px;
+    display: flex;
+    background-color: #c1c9c9;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+.headerLogo{
+    height: 100%;
+}
+.navbar {overflow: hidden;font-size: 1rem;}.navbar a {    float: left;    font-size: 1rem;    color: #30474D;font-weight: 400;   text-align: center;    padding: 10px 16px; border-bottom: 5px solid transparent;   text-decoration: none;}.dropdown {float: left;overflow: hidden;transition: .5s;}.dropdown .dropbtn {font-size: 16px;border: none;outline: none;color: #30474D;font-weight: 400;padding: 10px 16px;background-color: inherit;border-bottom: 5px transparent;font-family: inherit;margin: 0;}.navbar a:hover,.dropdown:hover .dropbtn {border-bottom: 5px solid #5f9ea0;}.dropdown-content {display: none;position: absolute;background-color: #c2c2c2;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);z-index: 1;transition: .5s;}.dropdown-content a {float: none;color: #30474D;text-decoration: none;display: block;text-align: left;}.dropdown-content a:hover {background-color: #c1c9c9;} .dropdown:hover .dropdown-content {display: block;}
+.portadaHome{
+    min-height: 60vh;
+    justify-items: center;
+    background-image: url(../img/home.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.contenedorPorductosHome{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    background-color: transparent;
+    margin-top: -7%;
+    margin-bottom: -5%;
+}
+.productosHome{
+    aspect-ratio: 1/1;
+    width: 12%;
+    max-width: 160px;
+    border-radius: 5%;
+    background-color: #c2c2c2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    color: transparent;
+}
+.ico-art{
+    background-image: url(../img/productos/art.jpg);
+}
+.ico-aut{
+    background-image: url(../img/productos/automotores.jpg);
+}
+.ico-cau{
+    background-image: url(../img/productos/cauciones.jpg);
+}
+.ico-hog{
+    background-image: url(../img/productos/hogar.jpg);
+}
+.ico-vida{
+    background-image: url(../img/productos/vida.jpg);
+}
+
+.portadaProductos{
+    display: flex;
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 5%;
+}
+.portadaProductos h3{
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: #e0e0e0;
+    text-align: center;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    background-color: #5f9ea0;
+}
+.mainTextBodyProductos{
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 2em 0;
+    background-color: #c1c9c9;
+    margin-top: 1em;
+    color: #5f9ea0;
+    height: max-content;
+}
+.ulProductos{
+    margin-top: 2em;
+    background-color: #43767D;
+    border: 1px solid #30474D;
+    border-radius: 20px;
+    width: 95%;
+    align-self: center;
+    color: #c1c9c9 ;
+    padding: .5em;
+    list-style: none;
+    box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.2);
+}
+.ulProductos li{
+    padding: .5em 0;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+.empresasAbalan{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    width: 100%;
+    min-height: 100px;
+    background-color: #c1c9c9;
+    justify-content: space-around;
+}
+.empresasAbalan img{
+    width: 12%;
+    min-width: 100px;
+    align-self: center;
+    padding: 0 1em;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    min-height: 100px;
+    justify-content: space-evenly;
+    padding: 1em 0;
+    background-color: #30474D;
+    flex-wrap: wrap;
+}
+.footerContent{
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+}
+.footerContentMap{
+    width: 35%;
+    align-items: center;
+}
+.footerContent h1,.footerContent h5,.footerContent p,.footerContent a{
+    font-size: .8rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #c1c9c9;
+    padding: .3em;
+}
+.footerMap{
+    width: 70%;
+    aspect-ratio: 6/4;
+    border-radius: 20px;
+}
+.footerline{
+    width: 100%;
+    border-bottom: 2px solid #c1c9c9;
+    margin-bottom: 10px;
+}
+/*PORTADAS*/
+.portadaHogar{background-image: url(../img/hogar.jpg);}
+.portadaAutomotores{background-image: url(../img/automotores.jpg);}
+.portadaVida{background-image: url(../img/vida.jpg);}
+.portadaART{background-image: url(../img/art.jpg);}
+
+@media all and (max-width: 1080px){
+.contenedorPorductosHome{
+        margin-top: -30%;
+        margin-bottom: -20%;
+        padding-bottom: 10%;
+}
+.productosHome{
+    margin: 0 30px;
+    width: 20%;
+}
+}
+@media all and (max-width: 540px){
+    .contenedorPorductosHome{
+        margin-top: -50%;
+        margin-bottom: -50%;
+        padding-bottom: 10%;
+}
+.productosHome{
+    margin: 0 20px;
+    width: 30%;
+    max-width: 30%;
+}
+}
+@media all and (max-width: 420px){
+    .contenedorPorductosHome{
+        margin-top: -65%;
+        margin-bottom: -65%;
+        padding-bottom: 10%;
+}
+.productosHome{
+    margin: 0 10px;
+    width: 40%;
+    max-width: 40%;
+}
+}

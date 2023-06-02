@@ -26,6 +26,59 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+.mainIndex{
+    justify-content: space-evenly;
+    display: flex;
+    padding: 10% 2em 0;
+    align-items: center;
+}
+.mainIndexText{
+    display: flex;
+    flex-direction: column;
+    color: #c1c9c9;
+    width: 40%;
+    align-items: center;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.mainIndexText h3{
+    font-size: 2.1rem;
+    align-self: self-start;
+    color: #fafafa;
+    text-align: center;
+}
+.indexGraph{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    aspect-ratio: 1/1;
+}
+.graphTopLeft{
+    width: 50%;
+    border-radius: 100% 0 0 0;
+    background-color: #30474D;
+}
+.graphTopRight{
+    width: 50%;
+    border-radius: 0 100% 0 0;
+    background-image: url(../img/index1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.graphBottomLeft{
+    width: 50%;
+    border-radius: 0 0 0 100%;
+    background-image: url(../img/index2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.graphBottomRight{
+    width: 50%;
+    border-radius: 0 0  100% 0;
+    background-color: #43767D;
+}
+
+
 .contenedorPorductosHome{
     width: 100%;
     display: flex;
@@ -63,12 +116,16 @@
 .ico-vida{
     background-image: url(../img/productos/vida.jpg);
 }
+.ico-retiro{
+    background-image: url(../img/productos/retiro.jpg);
+}
 
 .portadaProductos{
     display: flex;
     height: 45vh;
     background-size: cover;
     background-position: center;
+    background-position: 25% left;
     background-repeat: no-repeat;
     background-attachment: fixed;
     justify-content: flex-end;
@@ -84,8 +141,8 @@
 .body{
     display: flex;
     flex-direction: column;
-    min-height: 80vh;
     background-color: #5f9ea0;
+    padding-bottom: 3em;
 }
 .mainTextBodyProductos{
     width: 100%;
@@ -120,7 +177,6 @@
 .empresasAbalan{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 2em;
     width: 100%;
     min-height: 100px;
     background-color: #c1c9c9;
@@ -172,6 +228,7 @@
 .portadaAutomotores{background-image: url(../img/automotores.jpg);}
 .portadaVida{background-image: url(../img/vida.jpg);}
 .portadaART{background-image: url(../img/art.jpg);}
+.portadaRetiro{background-image: url(../img/retiro.jpg);}
 
 @media all and (max-width: 1080px){
 .contenedorPorductosHome{

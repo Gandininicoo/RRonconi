@@ -7,15 +7,15 @@
 .header{
     height: 90px;
     display: flex;
-    background-color: #c1c9c9;
+    background-color: #6E003A;
     align-items: center;
     justify-content: space-between;
     padding: 0 5%;
 }
 .headerLogo{
-    height: 100%;
+    height: 90%;
 }
-.navbar {overflow: hidden;font-size: 1rem;}.navbar a {    float: left;    font-size: 1rem;    color: #30474D;font-weight: 400;   text-align: center;    padding: 10px 16px; border-bottom: 5px solid transparent;   text-decoration: none;}.dropdown {float: left;overflow: hidden;transition: .5s;}.dropdown .dropbtn {font-size: 16px;border: none;outline: none;color: #30474D;font-weight: 400;padding: 10px 16px;background-color: inherit;border-bottom: 5px transparent;font-family: inherit;margin: 0;}.navbar a:hover,.dropdown:hover .dropbtn {border-bottom: 5px solid #5f9ea0;}.dropdown-content {display: none;position: absolute;background-color: #c2c2c2;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);z-index: 1;transition: .5s;}.dropdown-content a {float: none;color: #30474D;text-decoration: none;display: block;text-align: left;}.dropdown-content a:hover {background-color: #c1c9c9;} .dropdown:hover .dropdown-content {display: block;}
+.navbar {overflow: hidden;font-size: 1rem;}.navbar a {    float: left;    font-size: 1rem;    color: #c1c9c9;font-weight: 400;   text-align: center;    padding: 10px 16px; border-bottom: 5px solid transparent;   text-decoration: none;}.dropdown {float: left;overflow: hidden;transition: .5s;}.dropdown .dropbtn {font-size: 16px;border: none;outline: none;color: #c1c9c9;font-weight: 400;padding: 10px 16px;background-color: inherit;border-bottom: 5px transparent;font-family: inherit;margin: 0;}.navbar a:hover,.dropdown:hover .dropbtn {border-bottom: 5px solid #7A0644;}.dropdown-content {display: none;position: absolute;background-color: #7A0644;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);z-index: 1;transition: .5s;}.dropdown-content a {float: none;color: #c2c2c2;text-decoration: none;display: block;text-align: left;}.dropdown-content a:hover {background-color: #752B53;} .dropdown:hover .dropdown-content {display: block;}
 .portadaHome{
     min-height: 60vh;
     justify-items: center;
@@ -31,6 +31,7 @@
     display: flex;
     padding: 10% 2em 0;
     align-items: center;
+    flex-wrap: wrap;
 }
 .mainIndexText{
     display: flex;
@@ -56,7 +57,11 @@
 .graphTopLeft{
     width: 50%;
     border-radius: 100% 0 0 0;
-    background-color: #30474D;
+    background-color: #311524;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out .2s;
 }
 .graphTopRight{
     width: 50%;
@@ -75,9 +80,20 @@
 .graphBottomRight{
     width: 50%;
     border-radius: 0 0  100% 0;
-    background-color: #43767D;
+    background-color: #752B53;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out .2s;
 }
-
+.graphText{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fafafa;
+}
+.escaleHover:hover{
+    transform: scale(1.1);
+}
 
 .contenedorPorductosHome{
     width: 100%;
@@ -100,6 +116,12 @@
     background-position: center;
     text-decoration: none;
     color: transparent;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: all ease 0.2s;
+}
+.productosHome:hover{
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
 .ico-art{
     background-image: url(../img/productos/art.jpg);
@@ -118,6 +140,32 @@
 }
 .ico-retiro{
     background-image: url(../img/productos/retiro.jpg);
+}
+.btnBarProductos{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    background-color: #311524;
+    padding: 20px 0px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.btnBarProductos button{
+    height: 140px;
+    background-color: #752B53;
+    aspect-ratio: 1/1;
+    color: #fafafa;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: all ease 0.2s;
+    font-size: 1.3rem;
+}
+.btnBarProductos button:hover{
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
 
 .portadaProductos{
@@ -141,7 +189,7 @@
 .body{
     display: flex;
     flex-direction: column;
-    background-color: #5f9ea0;
+    background-color: #6E003A;
     padding-bottom: 3em;
 }
 .mainTextBodyProductos{
@@ -153,13 +201,13 @@
     padding: 2em 0;
     background-color: #c1c9c9;
     margin-top: 1em;
-    color: #5f9ea0;
+    color: #752B53;
     height: max-content;
 }
 .ulProductos{
     margin-top: 2em;
-    background-color: #43767D;
-    border: 1px solid #30474D;
+    background-color: #311524;
+    border: 1px solid #752B53;
     border-radius: 20px;
     width: 95%;
     align-self: center;
@@ -167,6 +215,11 @@
     padding: .5em;
     list-style: none;
     box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.2);
+    transition: ease-in-out linear .4s;
+    display: none;
+}
+.ulProductosShow{
+    display:block;
 }
 .ulProductos li{
     padding: .5em 0;
@@ -187,6 +240,11 @@
     min-width: 100px;
     align-self: center;
     padding: 0 1em;
+    filter: grayscale(1);
+    transition: ease-in-out .3s;
+}
+.empresasAbalan img:hover{
+    filter: grayscale(0);
 }
 .footer{
     width: 100%;
@@ -194,7 +252,7 @@
     min-height: 100px;
     justify-content: space-evenly;
     padding: 1em 0;
-    background-color: #30474D;
+    background-color: #311524;
     flex-wrap: wrap;
 }
 .footerContent{
@@ -212,6 +270,8 @@
     text-decoration: none;
     color: #c1c9c9;
     padding: .3em;
+    max-width: 100%;
+    text-align: justify;
 }
 .footerMap{
     width: 70%;
@@ -223,12 +283,92 @@
     border-bottom: 2px solid #c1c9c9;
     margin-bottom: 10px;
 }
+.footerLinkContainer{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20%;
+}
+.footerImg{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
 /*PORTADAS*/
 .portadaHogar{background-image: url(../img/hogar.jpg);}
 .portadaAutomotores{background-image: url(../img/automotores.jpg);}
 .portadaVida{background-image: url(../img/vida.jpg);}
 .portadaART{background-image: url(../img/art.jpg);}
 .portadaRetiro{background-image: url(../img/retiro.jpg);}
+
+
+/*MENU*/
+#menuBtn {
+    display: none;
+    width: 50px;
+    height: 50px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+  
+  #menuBtn figure {
+    margin: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+  
+  #menuBtn .front {
+    background: transparent;
+    background-image: url(../img/Menu.svg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+  
+  #menuBtn .back {
+    background: transparent;
+    background-image: url(../img/backMenu.svg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotateY( 180deg) rotate(360deg);
+}
+  
+  #menuBtn.flipped {
+    transform: rotateY( 180deg) rotate(360deg);
+}
+
+#menuResponsive{
+    padding-top: 12%;
+    align-items: center;
+    position: fixed;
+    top: 90px;
+    right: -100%;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: #6E003A;
+    height: 100vh;
+    transition: all linear .4s;
+}
+#menuResponsive a,#menuResponsive .dropdown,#menuResponsive .dropdown button{
+    font-size: 1.4rem;
+    color: #c1c9c9;
+    background: transparent;
+    border: none;
+    text-decoration: none;
+    padding: none;
+}
+#menuResponsive .dropdown-content{
+    width: 100%;
+    position: relative;
+    background-color: #6E003A;
+    border-top: 2px solid #c1c9c9;
+}
+.menuShow{
+    right: 0!important;
+}
 
 @media all and (max-width: 1080px){
 .contenedorPorductosHome{
@@ -240,28 +380,104 @@
     margin: 0 30px;
     width: 20%;
 }
+.mainIndexText{
+    width: 80%;
 }
+.indexGraph{
+    width: 70%;
+    align-self: center;
+}
+.footerContent{
+    width: 38%;
+}
+}
+
+@media all and (max-width: 790px){
+    .graphText{
+        font-size: 1rem;
+        font-weight: 300;
+        color: #fafafa;
+    }
+    .navbar{
+        display: none;
+    }
+    .btnBarProductos button{
+        height: 100px;
+        font-size: 1.1rem;
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    #menuBtn{
+        display: block;
+    }
+}
+
 @media all and (max-width: 540px){
     .contenedorPorductosHome{
         margin-top: -50%;
         margin-bottom: -50%;
         padding-bottom: 10%;
 }
+.btnBarProductos button{
+    height: 80px;
+    font-size: .8rem;
+}
 .productosHome{
     margin: 0 20px;
     width: 30%;
     max-width: 30%;
 }
+.mainIndex{
+    padding-top: 70%; 
+}
+.graphText{
+    font-size: .8rem;
+    font-weight: 200;
+    color: #fafafa;
+}
+.footerContent{
+    width: 55%;
+}
+.footerContentHiddeCel{
+    display: none;
+}
 }
 @media all and (max-width: 420px){
+    .headerLogo{
+        height: 75%;
+        align-self: center;
+    }
+    #menuBtn{
+        width: 40px;
+        height: 40px;
+    }
     .contenedorPorductosHome{
         margin-top: -65%;
         margin-bottom: -65%;
         padding-bottom: 10%;
+}
+.btnBarProductos button{
+    height: 70px;
+    font-size: .7rem;
 }
 .productosHome{
     margin: 0 10px;
     width: 40%;
     max-width: 40%;
 }
+.mainIndexText h3{
+    font-size: 1.8rem;
 }
+.mainIndexText p{
+    font-size: 1rem;
+}
+.graphText{
+    font-size: .4rem;
+    font-weight: 200;
+}
+}
+

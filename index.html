@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramiro Ronconi Asesores de Seguros</title>
+    <title>Ramiro Ronconi Asesor de Seguros</title>
+    <meta name="description" content="Ramiro Ronconi product asesor de seguros en la ciudad de gualeguay entre rios. Entra y encontra las mejores opciones para tu seguro">
+    <meta name="keywords" content="Seguros, Gualeguay, Seguro, Asesor de seguros, Entre Rios">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="img/ramiroRonconiIco.png">
 </head>
 
 <body>
@@ -29,27 +32,50 @@
             <a href="">Sobre Nostros</a>
             <a href="">Contacto</a>
         </nav>
+        <div id="menuBtn">
+            <figure class="front"></figure>
+            <figure class="back"></figure>
+        </div>
     </header>
+    <div id="menuResponsive">
+        <a href="index.html">Inicio</a>
+        <div class="footerline"></div>
+            <div class="dropdown">
+                <button class="">Productos</button>
+                <div class="dropdown-content">
+                    <a href="automotores.html">Automotores</a>
+                    <a href="hogar.html">Hogar</a>
+                    <a href="vida.html">Vida</a>
+                    <a href="">Cauciones</a>
+                    <a href="art.html">ART</a>
+                    <a href="">Retiro</a>
+                </div>
+            </div>
+            <div class="footerline"></div>
+            <a href="">Sobre Nostros</a>
+            <div class="footerline"></div>
+            <a href="">Contacto</a>
+    </div>
     <section class="portadaHome"></section>
     <div class="contenedorPorductosHome">
-        <a class="productosHome ico-aut" href="automotores.html">Seguro Automotores</a>
+        <a class="productosHome ico-aut" href="vehiculos.html">Seguro vehiculos</a>
         <a class="productosHome ico-hog" href="hogar.html">Seguro Hogar</a>
-        <a class="productosHome ico-vida" href="vida.html">Seguro Vida</a>
-        <a class="productosHome ico-cau" href="">Seguro Cauciones</a>
+        <a class="productosHome ico-vida" href="personas.html">Seguro Personas</a>
+        <a class="productosHome ico-cau" href="agro.html">Seguro Agro</a>
         <a class="productosHome ico-art" href="art.html">ART</a>
-        <a class="productosHome ico-retiro" href="retiro.html">Seguro de Retiro</a>
+        <a class="productosHome ico-retiro" href="accidentes-personales.html">Seguro de Retiro</a>
     </div>
     <div class="body">
         <section class="mainIndex">
             <article class="mainIndexText">
                 <h3>Sentite bien, Sentite Seguro.</h3>
-                <p>Soy <strong>Ramiro Ronconi Asesor de seguros</strong> y estoy comprometido con brindar la mayor previsibilidad que le permita a cada cliente concentrarse en sus actividades y desarrollarse en su ámbito profesional y personal sabiendo que su patrimonio se encuentra protegido.</p>
+                <p>Soy <strong>Ramiro Ronconi Asesor de seguros</strong> y estoy comprometido con brindar el mejor asesoramiento, que le permita a cada cliente concentrarse en sus actividades y desarrollarse en su ámbito profesional y personal sabiendo que su patrimonio se encuentra protegido.</p>
             </article>
             <article class="indexGraph">
-                <div class="graphTopLeft"></div>
+                <div class="graphTopLeft escaleHover"><p class="graphText" style="padding-left: 20%; padding-top: 10%;">Responsabilidad.</p></div>
                 <div class="graphTopRight"></div>
                 <div class="graphBottomLeft"></div>
-                <div class="graphBottomRight"></div>
+                <div class="graphBottomRight escaleHover"><p class="graphText" style="padding-right: 20%; padding-bottom: 10%;">Etica de Trabajo.</p></div>
             </article>
             <aside></aside>
         </section>
@@ -71,7 +97,7 @@
                 style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
-        <nav class="footerContent">
+        <nav class="footerContent footerContentHiddeCel">
             <h5>Productos</h5>
             <div class="footerline"></div>
             <a  href="automotores.html">Seguro Automotores</a>
@@ -84,16 +110,20 @@
         <section class="footerContent">
             <p>Contactanos:</p>
             <div class="footerline"></div>
-            <p>Telefono: 3444 444444</p>
-            <a href="mailto:" target="_blank">mail@mail.com</a>
+            <a href="https://api.whatsapp.com/send?phone=543444516044&text=Hola!%F0%9F%91%8B%20Me%20contacto%20porque%20tengo%20una%20consulta%20sobre%20los%20seguros." target="_blank">Whatsapp: 3444 516044</a>
+            <a href="mailto:ramiroronconiseguros@gmail.com" target="_blank">RamiroRonconiSeguros@gmail.com</a>
         </section class="footerContent">
         <section class="footerContent">
             <p>Informacion util</p>
             <div class="footerline"></div>
-            <h5>Productor Asesor de Seguros - Matricula: 85050</h5>
-            <a href=""><img src="" alt=""></a>
+            <h5>Productor Asesor de Seguros - Matricula: 96117</h5>
+            <div class="footerLinkContainer">
+                <a class="footerImg"  href="http://qr.afip.gob.ar/?qr=UKFEmsgozUENuCZ16PDIIA,," target="_F960AFIPInfo"><img src="http://www.afip.gob.ar/images/f960/DATAWEB.jpg" style="width: 40%; justify-self: center;" alt="codigo QR data fiscal"></a>
+                <a class="footerImg"  href="https://www.argentina.gob.ar/superintendencia-de-seguros" target="_blank"><img src="img/logo_SSN_color.png" alt="superintendencia-de-seguros" style="width: 100%; height: 40%; align-self: center;"></a>
+            </div>
         </section>
     </footer>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>

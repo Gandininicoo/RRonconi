@@ -38,9 +38,9 @@
     flex-direction: column;
     color: #c1c9c9;
     width: 40%;
-    align-items: center;
+    align-items: flex-start;
     font-size: 1.2rem;
-    text-align: justify;
+    justify-content: flex-start;
 }
 .mainIndexText h3{
     font-size: 2.1rem;
@@ -116,6 +116,7 @@
     background-position: center;
     text-decoration: none;
     color: transparent;
+    z-index: 200;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     transition: all ease 0.2s;
 }
@@ -227,6 +228,10 @@
     font-size: 1.3rem;
     font-weight: 200;
 }
+.ulProductos li a{
+    color: #e0e0e0;
+    font-weight: 500;
+}
 .empresasAbalan{
     display: flex;
     flex-wrap: wrap;
@@ -287,11 +292,15 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 20%;
+    justify-content: space-evenly;
 }
 .footerImg{
-    width: 40%;
-    display: flex;
-    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+}
+.footerImg img{
+    height: 60px!important;
+    width: auto!important;
 }
 /*PORTADAS*/
 .portadaHogar{background-image: url(../img/hogar.jpg);}
@@ -299,7 +308,51 @@
 .portadaVida{background-image: url(../img/vida.jpg);}
 .portadaART{background-image: url(../img/art.jpg);}
 .portadaRetiro{background-image: url(../img/retiro.jpg);}
+.portadaAgro{background-image: url(../img/agro.jpg);}
+.portadaContacto{background-image: url(../img/contacto.jpg);}
 
+/*Contacto*/
+.contactoIndex{
+    justify-content: space-evenly;
+    display: flex;
+    padding: 10% 2em 0;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contactoFormulario{
+    width: 40%;
+    text-align: right;
+}
+.contactoFormulario p{
+    color: #e0e0e0;
+    font-size: 1rem;
+}
+.contactoFormularioNombre{
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 1.1rem;
+}
+.contactoFormularioConsulta{
+    font-size: 1.1rem;
+    padding-left: 10px;
+    width: 100%;
+    height: 30vh;
+    border-radius: 10px;
+    margin-bottom: 0;
+    display: inline;
+    min-width: 50px;
+    border-radius: 2px;
+}
+.contactoFormularioButton{
+    width: 30%;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    padding: 0px 20px ;
+}
+.contactoFormularioCheck{
+    max-width: 30px;
+}
 
 /*MENU*/
 #menuBtn {
@@ -368,6 +421,7 @@
 }
 .menuShow{
     right: 0!important;
+    z-index: 1000;
 }
 
 @media all and (max-width: 1080px){
@@ -381,6 +435,9 @@
     width: 20%;
 }
 .mainIndexText{
+    width: 80%;
+}
+.contactoFormulario{
     width: 80%;
 }
 .indexGraph{
@@ -410,6 +467,10 @@
         top: 0;
         right: 0;
         left: 0;
+        z-index: 1000;
+    }
+    .portadaProductos{
+        margin-top: 90px;
     }
     #menuBtn{
         display: block;

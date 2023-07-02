@@ -54,6 +54,10 @@
     width: 40%;
     aspect-ratio: 1/1;
 }
+.indexGraph img{
+    width: 110%;
+    align-self: center;
+}
 .graphTopLeft{
     width: 50%;
     border-radius: 100% 0 0 0;
@@ -310,7 +314,7 @@
 .portadaRetiro{background-image: url(../img/retiro.jpg);}
 .portadaAgro{background-image: url(../img/agro.jpg);}
 .portadaContacto{background-image: url(../img/contacto.jpg);}
-
+.portadaSobreNostros{background-image: url(../img/sobreNosotrosPortada.jpg);}
 /*Contacto*/
 .contactoIndex{
     justify-content: space-evenly;
@@ -444,6 +448,7 @@
     width: 70%;
     align-self: center;
 }
+
 .footerContent{
     width: 38%;
 }
@@ -455,7 +460,7 @@
         font-weight: 300;
         color: #fafafa;
     }
-    .navbar{
+    .navbar, .hidden790{
         display: none;
     }
     .btnBarProductos button{

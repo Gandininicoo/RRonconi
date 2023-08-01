@@ -427,7 +427,19 @@
     right: 0!important;
     z-index: 1000;
 }
-
+.sNPadding{
+    padding: 2% 2em 0!important;
+ }
+ .sNPadding h3{
+     justify-self: center;
+     color: #fafafa;
+     font-size: 2rem;
+     width: 100%;
+     text-align: center;
+     margin-bottom: 1.34em;
+  }
+  
+ 
 @media all and (max-width: 1080px){
 .contenedorPorductosHome{
         margin-top: -30%;
@@ -480,6 +492,15 @@
     #menuBtn{
         display: block;
     }
+    .sNPadding h3{
+        justify-self: center;
+        color: #fafafa;
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1.34em;
+     }
+     
 }
 
 @media all and (max-width: 540px){
@@ -535,8 +556,11 @@
     width: 40%;
     max-width: 40%;
 }
+.mainIndexText{
+    width: 95%;
+}
 .mainIndexText h3{
-    font-size: 1.8rem;
+    font-size: 1.3rem;
 }
 .mainIndexText p{
     font-size: 1rem;
@@ -546,4 +570,3 @@
     font-weight: 200;
 }
 }
-
